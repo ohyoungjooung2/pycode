@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import boto3
 import re
 import datetime
@@ -15,21 +15,25 @@ def check_num_first(res):
 
 def get_users():
     im = boto3.client('iam')
-    result=im.get_credential_report() 
-    if(result==''):
-      r=iam.generate_credentia_report()
-
-
+    try:
+        result=im.get_credential_report() 
+    except:
+        result=im.generate_credential_report() 
+        result=im.get_credential_report() 
+        
     cresult=result['Content'].decode('utf-8').split('\n')
     cresult=cresult[2:] 
 
     #TodayNineAm=datetime.datetime.today().strftime('%Y-%m-%d 09:00:00')
     TodayNineAm=datetime.datetime.today().strftime('%Y-%m-%d 00:00:00')
     #TodayNineAmInSec=int(datetime.datetime.strptime(TodayNineAm,'%Y-%m-%d %H:%M:%S').strftime('%s'))
-    TodayNineAmInSec=int(datetime.datetime.now().strftime('%s'))
-    print(TodayNineAmInSec)
+    #Python3 below datetime.now use no utc but localtime(KST), to be utc, minus (9*60*60) 9 hours
+    TodayNineAmInSec=int(datetime.datetime.now().strftime('%s')) - 32400
+    #print(TodayNineAmInSec)
     #print "TodayNineInSec"+ TodayNineAmInSec
     TwentyDays=1728000
+    
+    print ('userName,most_recent_in_date,most_recent,RecentActSince')
     for i in range(0,len(cresult)):
         userName=cresult[i].split(',')[0]
         created_time=cresult[i].split(',')[2]
@@ -69,6 +73,7 @@ def get_users():
         RecentActSince=round((TodayNineAmInSec-most_recent)/(24*60*60)) 
         if ( (TodayNineAmInSec - most_recent) >= TwentyDays):
           most_recent_in_date=datetime.datetime.fromtimestamp(most_recent).strftime('%Y-%m-%d %H:%M:%S')
-          print userName,most_recent_in_date,most_recent,RecentActSince
+          print (userName, "," ,most_recent_in_date, "," ,most_recent, "," ,RecentActSince)
+          #print userName, most_recent_in_date,most_recent,RecentActSince
 
 get_users()
