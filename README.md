@@ -14,6 +14,7 @@ def circle_draw(n):
 circle_draw(30)
 ```
 oyj@controller:~/test$ python3 circle.py 
+```
                               *                              
                        ***************                       
                     *********************                    
@@ -75,3 +76,4 @@ oyj@controller:~/test$ python3 circle.py
                     *********************                    
                        ***************                       
                               *                 
+```
