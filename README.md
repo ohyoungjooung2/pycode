@@ -1,5 +1,7 @@
-# pycode
-python script code
+# pycode is my collections that I create from time to time for fun. Sometimes useful for my work^^.
+# Hope this scripts help you somehow.^^
+
+python script code(circle.py example)
 ```
 #x^2 + y^2 = r^2 equation
 def circle_draw(n):
