@@ -1,7 +1,7 @@
 import time
 #From 100 million  data, find target 
 data = list(range(1,100000000))
-target = 0
+target = 1000
 
 #Time check function
 def time_take_chk(fname):
