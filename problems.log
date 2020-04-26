@@ -1,0 +1,16 @@
+INFO:root:Time required for ./test.mp4 = 0.0060231685638427734
+INFO:root:Time required for ./test.mp4 = 0.006189584732055664
+INFO:root:Time required for /home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz = 1.1988084316253662
+INFO:root:Time required for ./test.mp4 = 0.006094455718994141
+INFO:root:Time required for /home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz = 0.1338953971862793
+ERROR:root:[Errno 2] No such file or directory: '/no.txt'
+INFO:root:Time required for /no.txt = 0.00014925003051757812
+INFO:root:Time required for ./test.mp4 = 0.0077691078186
+INFO:root:Time required for /home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz = 0.135593175888
+INFO:root:Time required for /no.txt = 4.29153442383e-05
+INFO:root:Time required for ./test.mp4 = 0.056948184967041016
+INFO:root:Time required for /home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz = 1.2156929969787598
+ERROR:root:[Errno 2] No such file or directory: '/no.txt'
+INFO:root:Time required for /no.txt = 0.00017452239990234375
+INFO:root:Time required for ./test.mp4 = 0.007349252700805664
+INFO:root:Time required for /home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz = 0.1610584259033203

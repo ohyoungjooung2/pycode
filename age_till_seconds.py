@@ -2,7 +2,7 @@
 #This script calculates your age till seconds..your age starts 00:00 
 import datetime
 #Just modify below line for your birthday..
-BIRTHDAY='1988,01,12'
+BIRTHDAY='1972,01,12'
 
 HOUR_IN_SEC=(60*60)
 DAY_IN_SEC=(HOUR_IN_SEC*24)
@@ -47,4 +47,4 @@ def age_till_seconds(ais='1972,01,12'):
            print("You are "+ str(AGE) + "  " + "years old")
         
         
-age_till_seconds(BIRTHDAY)
+age_till_seconds('2019,02,04')

@@ -6,8 +6,9 @@ def solution(N):
        A = 1
        for i in range(1,N+1):
            A *= i
-       print A
+
        A = str(A)
+       print(A)
        L = len(A)
        Z = 0
        for a in range(L):
@@ -15,11 +16,4 @@ def solution(N):
        return Z
          
 
-       
-        
-
-print solution(14)
-
-                 
-
-        
+print(solution(14))
