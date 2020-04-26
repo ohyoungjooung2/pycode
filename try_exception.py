@@ -24,3 +24,4 @@ def read_file_timed(path):
 read_file_timed('./test.mp4')
 read_file_timed('/home/oyj/Downloads/pycharm-community-2019.3.1.tar.gz')
 #read_file_timed('/no.txt')
+
