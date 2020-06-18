@@ -1,3 +1,7 @@
+#This simple python script tested on python3.
+#Requires boto3.
+#Simply generate aws iam group,user,password(using ohsgpgn).
+#This cloud be used for multiple user and groups using loops. Have fun.
 import boto3
 from ohsgpgn import ohsgpgn
 newpass=ohsgpgn.genGoodpass(20)
@@ -41,3 +45,4 @@ res = client.add_user_to_group(
     GroupName=groupname,
     UserName=username
 )
+print(f'{username} created with password: {newpass} to group {groupname}')
