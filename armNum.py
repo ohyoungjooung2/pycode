@@ -32,3 +32,35 @@ def isArmstrong(n):
         print(f'{n} is not armstrong number')
 
 isArmstrong(153)
+#Java Code(java 8 tested)
+#public class ArmStrongNum {
+#    static void isArmstrong(int num) {
+#	 String snum = Integer.toString(num);
+#	 int snumLen = snum.length();
+#	 int result = 0;
+#	 int num2 = num;
+#	 while (num2 != 0) {
+#		int t = num2 % 10;
+#		result = (int) (result + (Math.pow(t,snumLen)));
+#		num2 = (num2 / 10);
+#	 }
+#	 if (result == num) {
+#		 System.out.println(num + " is Armstrong number");
+#	 }
+#	// else {
+#	//	 System.out.println(num + " is not Armstrong number");
+#	 //}
+#	 //System.out.println(snum.length());
+#	// return num;
+#	}
+#
+#	public static void main(String[] args) {
+#		//System.out.println(randList);
+#		isArmstrong(153);
+#		for (int i=1; i<=1000; i++) {
+#			isArmstrong(i);
+#		}
+#  }
+#
+#
+#}
