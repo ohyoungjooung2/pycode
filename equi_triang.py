@@ -1,4 +1,5 @@
 #This python scirpt print like below(triangle line == n)
+#
 #                   *
 #                 *   *
 #               *   *   *
