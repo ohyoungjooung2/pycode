@@ -1,4 +1,9 @@
 #Triangle and rectangle(tilted to right)
+#     *
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
 def tri(n):
     for i in range(n):
         for _ in range(0,1):
