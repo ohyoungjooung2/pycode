@@ -8,7 +8,7 @@ def revtri(n):
     for i in range(n):
         #print(i)
         for j in range(n,i,-1):
-          if j == 5:
+          if j == n:
             s=" "*i
             print(s,"*",end=' ')
           else:
@@ -16,4 +16,4 @@ def revtri(n):
 
         print()
 
-revtri(5)
+revtri(8)
