@@ -1,7 +1,7 @@
 # This script is for..
 # Example
 # 100->2*2*5*5,36-> 2*2*3*3
-def lcm(a,b):
+def divvs(a,b):
     #Inner def function
     def innerr(r):
       aar = []
@@ -22,4 +22,4 @@ def lcm(a,b):
     ars = innerr(a)
     brs = innerr(b)
     return (ars,brs)
-print(lcm(100,36))
+print(divvs(100,36))
