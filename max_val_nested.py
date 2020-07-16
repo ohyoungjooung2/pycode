@@ -10,5 +10,5 @@ def max_nest(a):
     #print(res)
     return max(res)
 
-a=[1,2,[3,4,8,[3,4,5,9]],5]
+a=[1,2,[3,4,8,[3,4,5,9,-111,1111]],5]
 print(max_nest(a))
