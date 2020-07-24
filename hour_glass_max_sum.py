@@ -49,8 +49,9 @@ def hour_gls_max(arr):
   #Start j=0
   j = 0
   
-  #Max value from 0
-  max_val=0
+  #Max value from -36
+  #
+  max_val=-36
   for i in range(len(res)):
       #For debug
       #if i % 3 == 0:
