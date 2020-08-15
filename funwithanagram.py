@@ -1,6 +1,6 @@
 #
 #text[0] "code", if rest is samewith code anagram "cdeo" than remove it.
-#if text[1] "aaagmnrs" is samw with "aaagmnrs" then remove it,,in this case
+#if text[1] "aaagmnrs" is same with "anagrams" then remove it,,in this case
 #it is anagrams.. and so on and on..
 #The result should be sorted(text) like ["aaagmnrs","code","dddd"]
 text=["code","aaagmnrs","anagrams","doce","dddd"] 
