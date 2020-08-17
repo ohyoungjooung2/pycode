@@ -1,6 +1,7 @@
 #Find common asciis among strings. And count it.
 #For example, if arr=['abcdde','baccd','eeabg']
 #Then, ab is all arr[0],arr[1],arr[2], so the count is 2('a',and 'b')
+#https://www.hackerrank.com/challenges/gem-stones/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 
 def gemfind(arr):
     lenar=len(arr)
