@@ -1,5 +1,5 @@
 #https://www.hackerrank.com/challenges/palindrome-index/copy-from/177043277
-#This algo rithem is the one that requires the index, which if we remove, the whole string would be pilandrom like 'aa','aca',bcb'...
+#This algo rithem is the one that requires the index, which if we remove, the whole string would be palindrome like 'aa','aca',bcb'...
 def pi(s):
    if s == s[::-1]:
       return -1
