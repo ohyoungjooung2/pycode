@@ -5,8 +5,6 @@ def pi(s):
       return -1
 
    lis=list(s)
-   r1=0
-   r2=0
    
    for i in range(len(lis)):
        if lis[i] != lis[-(i+1)]:
