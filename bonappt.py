@@ -1,3 +1,4 @@
+#https://www.hackerrank.com/challenges/bon-appetit/problem
 bill=[3,10,2,9]
 k=1
 b=12
