@@ -4,6 +4,6 @@ def to_b(n):
      while n >= 1:
          ra = n % 2
          r += str(ra)
-         n = n/2
+         n = n//2
      return r[::-1]
  
