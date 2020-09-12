@@ -1,3 +1,4 @@
+#https://www.hackerrank.com/challenges/sparse-arrays/problem
 #String count from queries
 #aba happens 2 time, in strings
 #xzxb happens 1 time in strings,
