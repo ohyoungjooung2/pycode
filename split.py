@@ -1,7 +1,6 @@
-#This script split binary file into 1mb
-#Here just test.mp3. Should change this file name.
-#Also CH_SIZE can be changed to bigger or smaller
-#This is binary file splitter
+#This script split binary file into argv[1] bytes
+#filename+_part+001(..) files are saved into filename_output directory
+#Tested in windows 10, and Linux(python3.x)
 import sys
 import os
 import hashlib
